@@ -1,28 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChainCacao — Solution blockchain pour la traçabilité du cacao au Togo. Transparence, équité et conformité EUDR pour les producteurs togolais.">
+    <title>ChainCacao — Traçabilité Blockchain du Cacao au Togo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="./js/main.js" defer></script>
-    <title>Document</title>
 </head>
 <body>
+
+    <!-- ===== HEADER ===== -->
     <header id="en-tete">
-        <a href="#logo" class="logo">ChainCacao</a>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
+        <a href="#home" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="9" cy="10" rx="5.5" ry="5" fill="white" opacity="0.85"/>
+                    <path d="M9 3 C11.5 5.5 12 8 9 10 C6 8 6.5 5.5 9 3Z" fill="white"/>
+                </svg>
+            </div>
+            <span class="logo-text">Chain<span>Cacao</span></span>
+        </a>
+
+        <nav id="mainNav">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#probleme">Problèmes</a>
+            <a href="#solution">Solution</a>
+            <a href="#users">Acteurs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn btn-nav">Nous contacter</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#probleme">Problèmes</a>
+            <a href="#solution">Solution</a>
+            <a href="#users">Acteurs</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="presentation">
+                <span class="badge">🌿 Technologie Blockchain</span>
+                <h1>Révolutionner la traçabilité du cacao au Togo</h1>
+                <p>Une solution décentralisée pour garantir transparence, équité et accès aux marchés internationaux — des champs togolais jusqu'aux tablettes européennes.</p>
+                <div class="hero-actions">
+                    <a href="#solution" class="btn btn-primary">Découvrir la solution</a>
+                    <a href="#probleme" class="btn btn-ghost">En savoir plus ↓</a>
+                </div>
+            </div>
+            <div class="hero-scroll-hint">
+                <span>Défiler</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ===== STATS SECTION ===== -->
+        <section class="stats-band">
+            <div class="stats-band-inner">
+                <div class="stat-item">
+                    <strong>40 000+</strong><span>familles cacaoculteurs</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <strong>15–25 %</strong><span>revenu reversé au producteur</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <strong>40 M$</strong><span>pertes annuelles dues aux fraudes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <strong>&lt; 5 %</strong><span>des exportations certifiées</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROBLÈME ===== -->
+        <section class="probleme" id="probleme">
+            <div class="section-label">Le constat</div>
+            <h2>Un système opaque<br><em>et injuste</em></h2>
+            <p class="section-subtitle">La filière cacao togolaise repose sur une chaîne de valeur fragmentée, sans traçabilité ni garantie de prix équitable pour les producteurs.</p>
+
+            <div class="boxContener">
+                <div class="box reveal">
+                    <div class="box-icon">👨‍👩‍👧‍👦</div>
+                    <h3>40 000+</h3>
+                    <p>Familles dépendent directement du cacao pour leur subsistance</p>
+                </div>
+                <div class="box reveal">
+                    <div class="box-icon">💸</div>
+                    <h3>15–25 %</h3>
+                    <p>Seulement de la valeur finale revient au producteur</p>
+                </div>
+                <div class="box reveal">
+                    <div class="box-icon">🔗</div>
+                    <h3>4 à 6</h3>
+                    <p>Intermédiaires non identifiés dans la chaîne logistique</p>
+                </div>
+                <div class="box reveal">
+                    <div class="box-icon">📄</div>
+                    <h3>&lt; 5 %</h3>
+                    <p>Des exportations actuellement certifiées et conformes</p>
+                </div>
+                <div class="box reveal">
+                    <div class="box-icon">📉</div>
+                    <h3>40 M$</h3>
+                    <p>Pertes économiques annuelles liées aux fraudes et détournements</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONSÉQUENCES ===== -->
+        <section class="consequences" id="consequences">
+            <div class="consequences-inner">
+                <div class="consequences-text">
+                    <div class="section-label light">L'urgence</div>
+                    <h2>Un avenir<br><em>menacé</em></h2>
+                    <p>Sans action immédiate, le Togo risque de perdre définitivement l'accès au marché européen, plongeant des dizaines de milliers de familles dans une précarité encore plus profonde.</p>
+                    <a href="#solution" class="btn btn-white">Voir notre solution →</a>
+                </div>
+                <div class="consequences-list">
+                    <div class="consequence reveal">
+                        <div class="consequence-icon">❌</div>
+                        <div>
+                            <strong>Perte d'accès au marché européen</strong>
+                            <p>La réglementation EUDR entre en vigueur : sans traçabilité prouvée, les exportations togolaises seront bloquées à la frontière.</p>
+                        </div>
+                    </div>
+                    <div class="consequence reveal">
+                        <div class="consequence-icon">📉</div>
+                        <div>
+                            <strong>Effondrement des revenus agricoles</strong>
+                            <p>Une baisse drastique de la demande provoquera une chute des prix bord-champ, appauvrissant encore davantage les agriculteurs.</p>
+                        </div>
+                    </div>
+                    <div class="consequence reveal">
+                        <div class="consequence-icon">⚠️</div>
+                        <div>
+                            <strong>Aggravation de la pauvreté rurale</strong>
+                            <p>Les zones cacaocultières du Togo, déjà fragilisées, verraient leur développement économique sérieusement compromis.</p>
+                        </div>
+                    </div>
+                    <div class="consequence reveal">
+                        <div class="consequence-icon">🚫</div>
+                        <div>
+                            <strong>Blocage total des exportations</strong>
+                            <p>Les pays importateurs exigent désormais une traçabilité complète de l'origine à la livraison, sous peine d'interdiction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOLUTION ===== -->
+        <section class="features" id="solution">
+            <div class="section-label">Notre réponse</div>
+            <h2>Fonctionnalités <em>clés</em></h2>
+            <p class="section-subtitle">Une plateforme blockchain complète, pensée pour les réalités du terrain togolais et les exigences des marchés internationaux.</p>
+
+            <div class="features-container">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">📍</div>
+                    <h3>Enregistrement des lots</h3>
+                    <p>Chaque lot est horodaté et enregistré avec ses données complètes : coordonnées GPS, poids, variété de cacao, coopérative et date de récolte.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔁</div>
+                    <h3>Suivi des transferts</h3>
+                    <p>Chaque étape du parcours est consignée de manière immuable : ferme → coopérative → transformateur → exportateur → acheteur final.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Vérification instantanée</h3>
+                    <p>Un acheteur consulte l'historique complet d'un lot en quelques secondes, simplement en scannant le QR code apposé sur l'emballage.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">✅</div>
+                    <h3>Conformité EUDR</h3>
+                    <p>La plateforme génère automatiquement une preuve de traçabilité conforme au Règlement européen contre la déforestation (EUDR 2023).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== UTILISATEURS ===== -->
+        <section class="users" id="users">
+            <div class="section-label">L'écosystème</div>
+            <h2>Des acteurs <em>connectés</em></h2>
+            <p class="section-subtitle">ChainCacao réunit l'ensemble des parties prenantes de la filière au sein d'une seule et même plateforme de confiance.</p>
+
+            <div class="users-container">
+                <div class="user-card reveal">
+                    <div class="user-icon">👨‍🌾</div>
+                    <h3>Agriculteurs & Coopératives</h3>
+                    <p>Enregistrent leurs lots directement depuis l'application mobile, même en zone à faible connectivité.</p>
+                </div>
+                <div class="user-card reveal">
+                    <div class="user-icon">🏭</div>
+                    <h3>Transformateurs & Exportateurs</h3>
+                    <p>Assurent la continuité de la chaîne en ajoutant leurs étapes de transformation et les données logistiques.</p>
+                </div>
+                <div class="user-card reveal">
+                    <div class="user-icon">📜</div>
+                    <h3>Organismes de certification</h3>
+                    <p>Apposent leurs certifications (Fairtrade, bio, Rainforest Alliance) directement sur les lots vérifiés.</p>
+                </div>
+                <div class="user-card reveal">
+                    <div class="user-icon">🌍</div>
+                    <h3>Importateurs européens</h3>
+                    <p>Vérifient la conformité EUDR de chaque livraison en temps réel, depuis leur tableau de bord.</p>
+                </div>
+                <div class="user-card reveal">
+                    <div class="user-icon">🏛️</div>
+                    <h3>Ministère de l'Agriculture</h3>
+                    <p>Supervise et régule l'ensemble de la filière avec des données agrégées fiables et infalsifiables.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <div class="section-label light">Rejoignez-nous</div>
+                <h2>Prêt à transformer<br><em>la filière cacao ?</em></h2>
+                <p>Que vous soyez agriculteur, coopérative, exportateur ou institutionnel, ChainCacao a une solution adaptée à vos besoins. Prenez contact avec notre équipe.</p>
+                <div class="contact-actions">
+                    <a href="mailto:pissangyindoutieseth" class="btn btn-primary">✉️ Nous écrire</a>
+                    <a href="tel:+22890255777" class="btn btn-ghost-light">📞 +228 90 25 57 77</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="9" cy="10" rx="5.5" ry="5" fill="white" opacity="0.85"/>
+                            <path d="M9 3 C11.5 5.5 12 8 9 10 C6 8 6.5 5.5 9 3Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text footer-logo-text">Chain<span>Cacao</span></span>
+                </a>
+                <p>La traçabilité blockchain au service des agriculteurs togolais et de la conformité EUDR.</p>
+            </div>
 
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="#home">Accueil</a>
+                    <a href="#probleme">Problèmes</a>
+                    <a href="#solution">Solution</a>
+                    <a href="#users">Acteurs</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="mailto:pissangyindoutieseth">pissangyindoutieseth@gmail.com</a>
+                    <a href="tel:+22890255777">+228 90 25 57 77</a>
+                    <span>Lomé, Togo</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 ChainCacao. Tous droits réservés. — Fait avec ❤️ pour les agriculteurs togolais.</p>
+        </div>
     </footer>
+
 </body>
 </html>
